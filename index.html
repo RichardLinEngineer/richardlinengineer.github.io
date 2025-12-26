@@ -7,19 +7,72 @@
     <meta name="author" content="Richard Lin">
     <link rel="stylesheet" href="/Richard-Lin/css/styles.css">
     <title>Richard Lin</title>
+    <style>
+        .top-header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0.5em 1em;
+        }
+        .logo img{
+            width: auto;
+            height: 4em;
+            flex-shrink: 0;
+        }
+
+        .navbar {
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            flex: 1;
+            gap: 4em;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li a {
+            line-height: 2em;
+            text-decoration: none;
+            font-size: 1.2em;
+            white-space: nowrap;
+        }
+    </style>
 </head>
 <body>
-    <div id="navbar"></div>
     <header>
-        <h1 style="text-align: center; font-size: 48px;">
-            Richard Lin
-        </h1>
-                <blockquote style="text-align: center; font-size: 20px;">
-            "Water at its end forms a waterfall; humans at despair are reborn. Change your mentality, change anything"
-        </blockquote>
-        <blockquote style="text-align: center; font-size: 20px;">
-            "Life’s just thirty thousand days, a day happy, a day well lived.
-        </blockquote>
+        <div class="top-header">
+
+            <!-- Rich Logo -->
+            <div class="logo">
+                <img src="images/Rich_head.png" alt="Richard Lin Logo">
+            </div>
+
+            <!-- Navigation Bar -->
+             <nav>
+                <ul class="navbar">
+                    <li><a href="/Richard-Lin/index.html">Home</a></li>
+                    <li><a href="/Richard-Lin/pages/projects.html">Projects</a></li>
+                    <li><a href="/Richard-Lin/pages/resume.html">Resume</a></li>
+                    <li><a href="/Richard-Lin/pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Temp Holder, Language Selector would be implemented here-->
+            <div class="logo">
+                <img src="images/Rich_head.png" alt="Richard Lin Logo">
+            </div>
+        </div>
+
+        <div class="header-content">
+            <h1 style="text-align: center; font-size: 48px;">
+                Richard Lin
+            </h1>
+                    <blockquote style="text-align: center; font-size: 20px;">
+                "Water at its end forms a waterfall; humans at despair are reborn. Change your mentality, change anything"
+            </blockquote>
+            <blockquote style="text-align: center; font-size: 20px;">
+                "Life’s just thirty thousand days, a day happy, a day well lived.
+            </blockquote>
+        </div>
     </header>
     <main>
         <div style="text-align: center;">
