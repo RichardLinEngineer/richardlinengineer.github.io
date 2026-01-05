@@ -1,11 +1,11 @@
-fetch("nav.html")
+fetch("/nav.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("navbar").innerHTML = data;
   })
   .catch(error => console.log("Error loading navbar:", error));
 
-fetch("footer.html")
+fetch("/footer.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("footer").innerHTML = data;
@@ -15,7 +15,7 @@ fetch("footer.html")
   // =====================
 // Load Navbar and Footer
 // =====================
-fetch("nav.html")
+fetch("/nav.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("navbar").innerHTML = data;
@@ -23,7 +23,7 @@ fetch("nav.html")
   })
   .catch(error => console.log("Error loading navbar:", error));
 
-fetch("footer.html")
+fetch("/footer.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("footer").innerHTML = data;
@@ -36,7 +36,7 @@ fetch("footer.html")
 let translations = {};   // global object to store JSON
 let currentLang = 'en';  // default language
 
-fetch("js/lang.json")
+fetch("/js/lang.json")
   .then(response => response.json())
   .then(data => {
     translations = data;
