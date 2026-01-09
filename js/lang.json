@@ -1,10 +1,18 @@
 {
     "en":{
+        "home": "Home",
+        "projects": "Projects",
+        "resume": "Resume",
+        "contact": "Contact",
         "name":"Richard Lin",
         "quote": "\"Water at its end forms a waterfall; humans at despair are reborn. Change your mentality, change anything\"",
         "bio": "I'm Richard Lin from Huntingdon Valley, PA, an undergraduate studying Electrical and Computer Engineering at Temple University and a Temple STEPS Scholar (NSF-supported Sustainable Temple Energy and Power Scholars Program). I'm passionate about software-hardware integration, robotics, AI, and sustainable energy. In my free time, I stay active through badminton, running, and going to the gym. I also enjoy spending time with friends, playing games, watching <i>Detective Conan</i> and Chinese reality shows, and of course, I never miss an opportunity to enjoy good food."
     },
     "zh":{
+        "home": "主页",
+        "projects": "项目",
+        "resume": "简历",
+        "contact": "联系",
         "name":"林贝贝",
         "quote": "\"水到尽头是漂布，人道绝境是重生 唯有改变心态，才能改变一切\"",
         "bio": "我叫林贝贝, 来自宾夕法尼亚州亨廷顿谷, 目前在天普大学读电气与计算机工程本科, 同时也是天普STEPS学者(NSF支持的可持续能源与动力学者计划). 我对软硬件结合, 机器人, 人工智能和可持续能源充满热情. 业余时间，我喜欢打羽毛球, 跑步, 去健身房. 我也喜欢和朋友聚会, 玩游戏，或者看《名侦探柯南》和中国综艺节目. 当然，我也不会错过任何享受美食的机会."
