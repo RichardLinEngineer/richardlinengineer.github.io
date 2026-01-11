@@ -230,6 +230,10 @@ body {
     .language-selector{
         margin-left: auto;
     }
+
+    .linkedin-badge{
+        display: block;
+    }
 }
 
 header h1{
@@ -279,6 +283,13 @@ main{
     padding: 1rem 1rem;
     justify-content: space-evenly;
 }
+
+.linkedin-badge{
+    color:#0a66c2;
+    font-size: 50px;
+    display: none;
+}
+
 
 .github-badge a{
     color:black;

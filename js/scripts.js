@@ -41,7 +41,7 @@ function setLanguage(lang){
   translatableElements.forEach(el =>{
     const key = el.dataset.key;
     if(translations[currentLang] && translations[currentLang][key]){
-      el.textContent = translations[currentLang][key];
+      el.innerHTML = translations[currentLang][key];
     }
   });
   localStorage.setItem("siteLang", currentLang);
