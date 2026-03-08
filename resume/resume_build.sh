@@ -12,7 +12,7 @@
 
 
 
-TEX_FILE="RichardLinResume.tex"
+TEX_FILE="Richard_Lin_Resume.tex"
 
 show_help() {
     echo "Usage: ./resume_build.sh [option]"
