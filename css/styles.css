@@ -271,6 +271,34 @@ a:focus, button:focus, input:focus select:focus, textarea:focus{
     outline-offset: 2px;
 }
 
+.resume{
+    text-align: center;
+}
+.resume-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    background-color: #000;
+    text-decoration: none;
+    color:#ffffff;
+    border-radius: 999px;
+    transition: background 0.3s;
+}
+
+.resume-download-btn:hover{
+    background-color: #333;
+}
+
+.resume-pdf{
+    display: block;
+    width: 50%;
+    height: 850px;
+    margin: 20px auto; 
+    border: none;
+}
+
 @media (max-width: 768px){
     .navbar{
         padding: 0 1rem;
@@ -332,5 +360,10 @@ a:focus, button:focus, input:focus select:focus, textarea:focus{
 
     header blockquote{
         font-size: 1.20rem;
+    }
+
+    .resume-pdf{
+        width: 90%;
+        height: 600px;
     }
 }
