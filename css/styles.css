@@ -294,7 +294,7 @@ a:focus, button:focus, input:focus select:focus, textarea:focus{
     text-decoration: none;
     color:#ffffff;
     border-radius: 999px;
-    transition: background 0.3s;
+    transition: background-color 0.3s;
 }
 
 .resume-download-btn:hover{
