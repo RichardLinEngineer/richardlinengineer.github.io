@@ -271,7 +271,7 @@ a:focus, button:focus, input:focus select:focus, textarea:focus{
     outline-offset: 2px;
 }
 
-.my-resume{
+.resume-header{
     margin-bottom: 0;
 }
 
@@ -307,6 +307,113 @@ a:focus, button:focus, input:focus select:focus, textarea:focus{
     height: 850px;
     margin: 20px auto; 
     border: none;
+}
+
+.contact-main{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 24px;
+}
+
+.contact-card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: #070B34;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    color: #ffd33c;
+    min-height: 200px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.contact-card i{
+    font-size: 46px;
+    color: #ffd33c;
+}
+
+.contact-card .fas{
+    margin-bottom: 15px;
+}
+
+.action-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    background-color: #ffd33c;
+    text-decoration: none;
+    color: #070B34;
+    border-radius: 999px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.action-btn:hover {
+    background-color: #e6c100;
+    color: #070B34;
+}
+
+.icon-circle{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.wechat-circle{
+    background-color: #07C160;
+}
+
+.wechat-circle i{
+    color: white;
+    font-size: 40px;
+}
+
+.line-circle{
+    background-color: white;
+}
+
+.line-circle i{
+    color: #00C300;
+    font-size: 46px;
+}
+
+.label{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.value{
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.qrcode{
+    margin-top: auto;
+    width: 100%;
+    max-width: 160px;
+    max-height: 160px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
 @media (max-width: 768px){
@@ -375,5 +482,32 @@ a:focus, button:focus, input:focus select:focus, textarea:focus{
     .resume-pdf{
         width: 85%;
         height: 65vh;
+    }
+
+    .contact-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card{
+        min-height: auto;
+        padding: 15px;
+    }
+
+    .qrcode{
+        width: 140px;
+        height: 140px;
+    }
+
+    .icon-circle{
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-card i{
+        font-size: 28px;
+    }
+
+    .wechat-circle i, .line-circle i{
+        font-size: 36px;
     }
 }
