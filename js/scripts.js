@@ -8,6 +8,9 @@ fetch("/nav.html")
 
     // Initialize navbar interaction (menu toggle, Language dropdown)
     initNavbar();
+
+    // Load translation After navbar exists
+    loadTranslations();
   })
   .catch(error => console.log("Error loading navbar:", error));
 
@@ -28,27 +31,29 @@ let translations = {};
 // Default Language
 let currentLang = "en";
 
-fetch("/js/lang.json")
-  .then(response => response.json())
-  .then(data => {
-    // Store JSON translation data
-    translations = data;
+function loadTranslations(){
+  fetch("/js/lang.json")
+    .then(response => response.json())
+    .then(data => {
+      // Store JSON translation data
+      translations = data;
 
-    // Check if user previously selected a language
-    const savedLang = localStorage.getItem("siteLang");
-    if(savedLang && ["en", "zh"].includes(savedLang)){
-      currentLang = savedLang;
-    }else{
-      // Otherwise, detect browser language
-      const  browserLang = (navigator.language || "en").toLowerCase();
-      currentLang = browserLang.startsWith("zh") ? "zh" : "en";
-    }
+      // Check if user previously selected a language
+      const savedLang = localStorage.getItem("siteLang");
+      if(savedLang && ["en", "zh"].includes(savedLang)){
+        currentLang = savedLang;
+      }else{
+        // Otherwise, detect browser language
+        const  browserLang = (navigator.language || "en").toLowerCase();
+        currentLang = browserLang.startsWith("zh") ? "zh" : "en";
+      }
 
-    // Apply the selected language to the page
-    setLanguage(currentLang);
-  })
-  .catch(error  => console.log("Error loading translations:", error));
-
+      // Apply the selected language to the page
+      setLanguage(currentLang);
+    })
+    .catch(error  => console.log("Error loading translations:", error));
+  }
+  
 // Set Page Language
 // Update all elements with "data-key" to the selected language
 function setLanguage(lang){
