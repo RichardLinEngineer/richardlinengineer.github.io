@@ -405,8 +405,11 @@ a:focus, button:focus, input:focus select:focus, textarea:focus{
     font-size: 1.1rem;
     text-align: center;
     margin-bottom: 15px;
-    color: inherit;
+}
+
+a[href^="tel"]:not(.action-btn) {
     text-decoration: none;
+    color: #ffd33c;
 }
 
 .qrcode{
