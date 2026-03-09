@@ -348,6 +348,11 @@ a:focus, button:focus, input:focus select:focus, textarea:focus{
     margin-bottom: 15px;
 }
 
+a[href^="tel"]{
+    text-decoration: none;
+    color: #ffd33c;
+}
+
 .action-btn{
     display: inline-flex;
     align-items: center;
@@ -406,12 +411,6 @@ a:focus, button:focus, input:focus select:focus, textarea:focus{
     text-align: center;
     margin-bottom: 15px;
 }
-
-a[href^="tel"] .value{
-    text-decoration: none;
-    color: #ffd33c;
-}
-
 
 .qrcode{
     margin-top: auto;
