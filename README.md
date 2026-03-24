@@ -45,11 +45,12 @@ RichardLinEngineer/
 │   ├── projects.html
 │   └── resume.html  
 ├── .gitignore
+├── LICENSE
+├── README.md
 ├── favicon.ico
 ├── footer.html
 ├── index.html
-├── nav.html
-└── README.md
+└── nav.html
 ```
 
 ## ⚡ Getting Started
