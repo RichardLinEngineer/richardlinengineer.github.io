@@ -5,7 +5,7 @@ Welcome to my personal website! 🌐
 🔗 **Live Site:** [richardlinengineer.github.io](https://richardlinengineer.github.io/)
 
 This website serves as an online portfolio showcasing my academic journey, projects, technical skills, and ways to connect.  
-It is also part of my self-learning journey in **HTML5, CSS3, and JavaScript**
+It is also part of my self-learning journey in **HTML5, CSS3, and JavaScript**.
 
 > 💡 Built from scratch as part of my journey into web development and frontend engineering.
 
@@ -64,7 +64,7 @@ git clone https://github.com/RichardLinEngineer/richardlinengineer.github.io.git
 
 
 ## 🌐 Translations
-This site supports English and 中文 using a lang.json file. Users can switch languages via the dropdown in the navbar. Language preference is saved using localStorage.
+This site supports English and Chinese (中文) using a `lang.json` file. Users can switch languages via the dropdown in the navbar. Language preference is saved using localStorage.
 
 ## 📬 Contact
 - 📧 Email: richlin3452@gmail.com
