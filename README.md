@@ -73,3 +73,6 @@ This site supports English and Chinese (中文) using a `lang.json` file. Users 
 - 💬 Line: rich3452
 - 🔗 LinkedIn: [linkedin.com/in/richardlin05](https://www.linkedin.com/in/richardlin05/)
 - 💻 GitHub: [github.com/RichardLinEngineer](https://github.com/RichardLinEngineer/)
+
+## ⚡ License
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
