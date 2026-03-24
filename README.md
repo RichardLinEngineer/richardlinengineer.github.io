@@ -5,7 +5,7 @@ Welcome to my personal website! 🌐
 🔗 **Live Site:** [richardlinengineer.github.io](https://richardlinengineer.github.io/)
 
 This website serves as an online portfolio showcasing my academic journey, projects, technical skills, and ways to connect.  
-It is also part of my self-learning journey in **HTML5, CSS3, and JavaScript**, where I built everything from scratch.
+It is also part of my self-learning journey in **HTML5, CSS3, and JavaScript**
 
 > 💡 Built from scratch as part of my journey into web development and frontend engineering.
 
