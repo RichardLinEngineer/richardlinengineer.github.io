@@ -64,7 +64,7 @@ Open `index.html` in a browser to view locally. Customize content in the HTML fi
 Supports English and Chinese (中文) via `lang.json`. Users can switch languages from the navbar; preference is saved with `localStorage`.
 
 ## Contact
-- 📧 Email: richlin3452@gmail.com
+- 📧 Email: richard.rich.lin@gmail.com
 - ![LinkedIn Logo](/images/linkedin.svg) LinkedIn: [linkedin.com/in/richardlin05](https://www.linkedin.com/in/richardlin05/)
 - ![GitHub Logo](/images/github.svg) GitHub: [github.com/richardlin05](https://github.com/richardlin05/)
 
