@@ -4,15 +4,15 @@
 \documentclass[11pt, letterpaper]{article}
 
 % ── Packages ────────────────────────────────────────────────────────────────
-\usepackage[margin=0.55in, top=0.45in, bottom=0.45in]{geometry}
+\usepackage[margin=0.5in, top=0.5in, bottom=0.5in]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{hyperref}
-\usepackage{xcolor}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{multicol}
 \usepackage[sfdefault]{carlito}
+\usepackage{microtype}
+\DisableLigatures[f]{encoding = *, family = *}
 
 % ── Hyperlink styling ────────────────────────────────────────────────────────
 \hypersetup{
@@ -23,10 +23,10 @@
 
 % ── Section title formatting ─────────────────────────────────────────────────
 \titleformat{\section}
-    {\normalfont\fontsize{11}{13}\selectfont\bfseries\uppercase}
+    {\normalfont\fontsize{12}{14}\selectfont\bfseries\uppercase}
     {}{0em}{}
     [\titlerule]
-\titlespacing{\section}{0pt}{4pt}{2pt}
+\titlespacing{\section}{0pt}{3pt}{1pt}
 
 % ── List settings ────────────────────────────────────────────────────────────
 \setlist[itemize]{leftmargin=1.5em, topsep=0pt, itemsep=0pt, parsep=0pt}
@@ -63,17 +63,17 @@
 \begin{document}
 
 % ── Header ──────────────────────────────────────────────────────────────────
-\noindent\hfill U.S. Citizen
-\begin{center}
-    {\Large \textbf{Richard Lin}} \\
+\noindent
+\hbox to \textwidth{\hfil{\fontsize{16}{19}\selectfont\textbf{Richard Lin}}\hfil\makebox[0pt][r]{U.S. Citizen}}\\[-1pt]
+{\centering
     Huntingdon Valley, PA $|$ 215-403-4999 $|$
-    \href{mailto:richlin3452@gmail.com}{richlin3452@gmail.com} \\
+    \href{mailto:richard.rich.lin@gmail.com}{richard.rich.lin@gmail.com} \\
     \href{https://github.com/richardlin05}{github.com/richardlin05} $|$
     \href{https://richardlin05.github.io}{richardlin05.github.io} $|$
     \href{https://linkedin.com/in/richardlin05}{linkedin.com/in/richardlin05}
-\end{center}
+    \par}
 
-\vspace{-8pt}
+\vspace{-3pt}
 
 % ── Education ───────────────────────────────────────────────────────────────
 \section{Education}
@@ -81,10 +81,9 @@
 \roleentry{Temple University}{Philadelphia, PA}%
     {Bachelor of Science in Electrical and Computer Engineering}{Diploma Expected: May 2028}
 
-\noindent Minor: Computer Science $|$ Fundamentals of Physics Certificate $|$ GPA: 3.95/4.00 $|$ Dean's List: F24, S25, F25 \\
-\noindent \textbf{Relevant Courses:} Differential Equations; Digital Circuit Design; Circuits \& Electronics I-II; Computation I-II
+\noindent Minor: Computer Science $|$ Fundamentals of Physics Certificate $|$ GPA: 3.88/4.00 $|$ Dean's List: F24, S25, F25 \\
+\noindent \textbf{Relevant Courses:} Classical Control Systems; Signals and Systems; Processor Systems; Engineering Computation I-II-IV
 
-\vspace{2pt}
 
 % ── Professional Experience ──────────────────────────────────────────────────
 \section{Professional Experience}
@@ -95,79 +94,77 @@
 \noindent \textit{Advisor: Dr. Li Bai}
 \begin{itemize}
     \item Administered lab website and systems; ensured security, software maintenance and network reliability
-    \item Developed an AI assistive library with recommendation system using Python, LLMs, multi-agent workflows, and RAG to classify 400+ devices into 66 categories and natural-language accessibility matching
+    \item Built a RAG + LLM-rerank recommendation agent within a multi-agent LLM system in Python, with a cron-automated pipeline syncing a 400+ device catalog daily and matching natural-language queries for people with disabilities
+    \item Trained a Vision-Language-Action (VLA) model with LeRobot to enable a robotic arm to pick up and hand objects for individuals with limited mobility; separately implemented ROS2-based robot control in C++ across multiple robots
 \end{itemize}
 
-\vspace{1pt}
+\vspace{2.5pt}
 \subrole{Undergraduate Teaching Assistant}{Aug 2025 -- Present}
 \begin{itemize}
-    \item Assisted faculty with instruction, activities, assignment evaluation, and preparation of course materials
-    \item \textbf{ENGR 1101:} Mentored students in embedded system, programming, circuits with Micro:bit
-    \item \textbf{ENGR 1102:} Supported engineering design and data analysis using Excel, Python, NumPy, and Matplotlib
-    \item \textbf{ECE 1111:} Taught programming fundamentals including C, C++, Python, and Linux/Bash
+    \item Assisted faculty with instruction, hands-on activities, and assignment evaluation; held office hours for student support
+    \item \textbf{Intro to Engineering:} Guided students building embedded Micro:bit incubator, testing components (LEDs, fans, sensors)
+    \item \textbf{Engineering Problem Solving:} Supported wind turbine calculation/data analysis using Excel, Python (NumPy, Matplotlib)
+    \item \textbf{Engineering Computation I:} Taught C/C++/Python/Linux/Bash fundamentals, plus basic algorithms and time complexity
 \end{itemize}
 
-\vspace{2pt}
+\vspace{2.5pt}
+\subrole{STEPS Ambassador -- Sustainable Temple Energy and Power Scholars (STEPS)}{Sep 2024 -- Present}
+\begin{itemize}
+    \item Mentored STEPS underclassmen and led renewable-energy STEM demos for high schoolers, emphasizing sustainability
+\end{itemize}
+
 
 % ── Projects ─────────────────────────────────────────────────────────────────
 \section{Projects}
 
 \projectentry{Musical Light Show -- ECE 2352: Circuits and Electronics II}{May 2026}
 \begin{itemize}
-    \item Designed analog audio-processing system that visualizes music audio-reactive LED light show
-    \item Built op-amp amplifier, adjustable gain control, high and low-pass filters, and BJT LED driver circuits
-    \item Validated design and performance through Multisim simulation and hardware testing
+    \item Designed analog audio-processing system that visualizes music as an audio-reactive LED light show
+    \item Built op-amp mixer, potentiometer volume control, high/low-pass filters, peak detectors, BJT LED driver circuits
+    \item Calculated values with cutoff-frequency/current-limiting equations; verified against Multisim and hardware, within $\sim$1\%
 \end{itemize}
 
 \vspace{1pt}
-\projectentry{Detective Conan AI Glasses (Childhood Dream Project) -- In progress}{June 2026}
+\projectentry{Detective Conan AI Glasses (Childhood Dream Project) -- In progress}{Jun 2026}
 \begin{itemize}
-    \item Designed and built AI smart glasses using Raspberry Pi Zero 2 W and ESP32 with camera, microphone, solar-assisted charging, and a custom 3D-printed enclosure
-    \item Developed voice assistant integrating speech recognition, local/cloud LLMs, and text-to-speech
-    \item Implemented object detection, OCR, face recognition, translation, navigation, and cybersecurity monitoring
+    \item Architecting AI smart glasses on Raspberry Pi Zero 2 W and ESP32 with camera, mic, solar charging, 3D-printed enclosure
+    \item Designing software architecture: intent engine with local/cloud LLM routing, object detection, OCR, cybersecurity tools
 \end{itemize}
 
-\vspace{2pt}
 
 % ── Clubs & Leadership ───────────────────────────────────────────────────────
 \section{Clubs \& Leadership}
 
-\roleentry{Sustainable Temple Energy and Power Scholars (STEPS)}{Philadelphia, PA}%
-    {STEPS Ambassador}{Sep 2024 -- Present}
-\begin{itemize}
-    \item Led STEM demos promoting engineering and energy for HS students; mentored STEPS underclassmen
-\end{itemize}
-
-\vspace{1pt}
 \roleentry{Institute of Electrical and Electronics Engineers (IEEE) -- Temple University}{Philadelphia, PA}%
     {President}{Sep 2024 -- Present}
 \begin{itemize}
-    \item Led a team of $\sim$11 officers in branch initiatives; outreach, workshops, and student engagement activities
-    \item Increased IEEE SAC conference participation by 70\% through outreach and IEEE membership engagement
-    \item Led a multi-university hardware hackathon with participation from Drexel and UPenn IEEE
+    \item Led the $\sim$11-member IEEE executive board in planning outreach programs, technical workshops, and industry networking events, while coordinating with four affiliated chapters and societies (EMBS, PES, WIE, IEEE-HKN)
+    \item Increased IEEE SAC participation by 70\% during the 2025--2026 academic year through outreach and event promotion
+    \item Founded the first annual multi-university hardware hackathon with Drexel and UPenn IEEE branches
 \end{itemize}
 
 \vspace{1pt}
-\roleentry{Temple University Eta Kappa Nu (IEEE-HKN)}{Philadelphia, PA}%
-    {Secretary}{June 2026 -- Present}
+\roleentry{Eta Kappa Nu (IEEE-HKN) -- Temple University}{Philadelphia, PA}%
+    {Secretary \& Treasurer}{Jun 2026 -- Present}
 \begin{itemize}
-    \item Coordinate member communications and maintain records for professional development, outreach, and chapter events.
+    \item Managed official correspondence with IEEE-HKN Headquarters and coordinated membership certification/induction documentation for newly elected members
 \end{itemize}
 
 \vspace{1pt}
 \roleentry{Temple University College of Engineering Alumni Association}{Philadelphia, PA}%
-    {Student Representative}{June 2026 -- Present}
+    {Student Representative}{Jun 2026 -- Present}
+\begin{itemize}
+    \item Served as liaison between the Alumni Association and students, connecting alumni for mentorship and networking
+\end{itemize}
 
-\vspace{2pt}
 
 % ── Skills ───────────────────────────────────────────────────────────────────
 \section{Skills}
 
 \noindent
-\textbf{Programming:} Python, C, C++, Java, JavaScript, Bash, HTML/CSS, Verilog/SystemVerilog, MATLAB \\[1pt]
-\textbf{AI:} LLM integration (Ollama, Cloud API), Prompt Engineering, Computer Vision (OpenCV, YOLO), Text-to-Speech, OCR \\[1pt]
-\textbf{Tools:} Git/GitHub, Linux, Raspberry Pi, n8n, FPGA (DE-Lite 10), MultiSim, Arduino, PyTorch, MS Office, AutoCAD \\[1pt]
-\textbf{Skills:} Hardware-Software integration, Multi-Agent Systems, UI/UX development, Circuit Design \& Analysis, Soldering \\[1pt]
+\textbf{Programming \& Web:} Python, C, C++, Java, MATLAB, Bash, Verilog/SystemVerilog, JavaScript, HTML/CSS, UI/UX Design \\[0pt]
+\textbf{AI \& Robotics:} LLM Integration, RAG, VLA, Edge AI, Computer Vision (OpenCV, YOLO), TTS/STT, Multi-Agent Systems, ROS \\[0pt]
+\textbf{Hardware \& Tools:} Git/GitHub, Linux, Raspberry Pi, Arduino, FPGA, Circuit Design \& Analysis, Soldering, n8n, PCB Design \\[0pt]
 \textbf{Languages:} English, Mandarin Chinese, Fuzhounese, Spanish
 
 \end{document}
