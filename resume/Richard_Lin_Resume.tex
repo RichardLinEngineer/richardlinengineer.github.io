@@ -4,7 +4,7 @@
 \documentclass[11pt, letterpaper]{article}
 
 % ── Packages ────────────────────────────────────────────────────────────────
-\usepackage[margin=0.5in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage[margin=0.5in, top=0.5in, bottom=0.35in]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{hyperref}
@@ -14,55 +14,43 @@
 \usepackage{microtype}
 \DisableLigatures[f]{encoding = *, family = *}
 
-% ── Hyperlink styling ────────────────────────────────────────────────────────
 \hypersetup{
     colorlinks=true,
     urlcolor=black,
     linkcolor=black
 }
 
-% ── Section title formatting ─────────────────────────────────────────────────
 \titleformat{\section}
     {\normalfont\fontsize{12}{14}\selectfont\bfseries\uppercase}
     {}{0em}{}
     [\titlerule]
-\titlespacing{\section}{0pt}{3pt}{1pt}
+\titlespacing{\section}{0pt}{4pt}{2pt}
 
-% ── List settings ────────────────────────────────────────────────────────────
 \setlist[itemize]{leftmargin=1.5em, topsep=0pt, itemsep=0pt, parsep=0pt}
 
-% ── No page numbers ──────────────────────────────────────────────────────────
 \pagestyle{empty}
 
-% ── Paragraph spacing ────────────────────────────────────────────────────────
 \setlength{\parskip}{0pt}
 \setlength{\parsep}{0pt}
 
-% ── Custom commands ──────────────────────────────────────────────────────────
-
-% Role entry: {Organization}{Location}{Title}{Date}
 \newcommand{\roleentry}[4]{%
     \noindent\textbf{#1} \hfill #2 \\
     \textit{#3} \hfill \textit{#4}%
     \vspace{0pt}
 }
 
-% Sub-role (same org, different title/date)
 \newcommand{\subrole}[2]{%
     \noindent\textit{#1} \hfill \textit{#2}%
     \vspace{0pt}
 }
 
-% Project entry: {Title}{Date}
 \newcommand{\projectentry}[2]{%
     \noindent\textbf{#1} \hfill \textit{#2}%
     \vspace{0pt}
 }
 
-% ════════════════════════════════════════════════════════════════════════════
 \begin{document}
 
-% ── Header ──────────────────────────────────────────────────────────────────
 \noindent
 \hbox to \textwidth{\hfil{\fontsize{16}{19}\selectfont\textbf{Richard Lin}}\hfil\makebox[0pt][r]{U.S. Citizen}}\\[-1pt]
 {\centering
@@ -73,9 +61,8 @@
     \href{https://linkedin.com/in/richardlin05}{linkedin.com/in/richardlin05}
     \par}
 
-\vspace{-3pt}
+\vspace{-2pt}
 
-% ── Education ───────────────────────────────────────────────────────────────
 \section{Education}
 
 \roleentry{Temple University}{Philadelphia, PA}%
@@ -84,8 +71,8 @@
 \noindent Minor: Computer Science $|$ Fundamentals of Physics Certificate $|$ GPA: 3.88/4.00 $|$ Dean's List: F24, S25, F25 \\
 \noindent \textbf{Relevant Courses:} Classical Control Systems; Signals and Systems; Processor Systems; Engineering Computation I-II-IV
 
+\vspace{2pt}
 
-% ── Professional Experience ──────────────────────────────────────────────────
 \section{Professional Experience}
 
 \roleentry{Temple University}{Philadelphia, PA}%
@@ -98,7 +85,7 @@
     \item Trained a Vision-Language-Action (VLA) model with LeRobot to enable a robotic arm to pick up and hand objects for individuals with limited mobility; separately implemented ROS2-based robot control in C++ across multiple robots
 \end{itemize}
 
-\vspace{2.5pt}
+\vspace{1pt}
 \subrole{Undergraduate Teaching Assistant}{Aug 2025 -- Present}
 \begin{itemize}
     \item Assisted faculty with instruction, hands-on activities, and assignment evaluation; held office hours for student support
@@ -107,14 +94,15 @@
     \item \textbf{Engineering Computation I:} Taught C/C++/Python/Linux/Bash fundamentals, plus basic algorithms and time complexity
 \end{itemize}
 
-\vspace{2.5pt}
+\vspace{1pt}
 \subrole{STEPS Ambassador -- Sustainable Temple Energy and Power Scholars (STEPS)}{Sep 2024 -- Present}
 \begin{itemize}
-    \item Mentored STEPS underclassmen and led renewable-energy STEM demos for high schoolers, emphasizing sustainability
+    \item Mentored STEPS underclassmen through the high-school-to-college transition, providing academic guidance
+    \item Designed and led renewable-energy STEM demos for high schoolers, emphasizing sustainability and real-world engineering
 \end{itemize}
 
+\vspace{2pt}
 
-% ── Projects ─────────────────────────────────────────────────────────────────
 \section{Projects}
 
 \projectentry{Musical Light Show -- ECE 2352: Circuits and Electronics II}{May 2026}
@@ -131,8 +119,8 @@
     \item Designing software architecture: intent engine with local/cloud LLM routing, object detection, OCR, cybersecurity tools
 \end{itemize}
 
+\vspace{2pt}
 
-% ── Clubs & Leadership ───────────────────────────────────────────────────────
 \section{Clubs \& Leadership}
 
 \roleentry{Institute of Electrical and Electronics Engineers (IEEE) -- Temple University}{Philadelphia, PA}%
@@ -147,7 +135,7 @@
 \roleentry{Eta Kappa Nu (IEEE-HKN) -- Temple University}{Philadelphia, PA}%
     {Secretary \& Treasurer}{Jun 2026 -- Present}
 \begin{itemize}
-    \item Managed official correspondence with IEEE-HKN Headquarters and coordinated membership certification/induction documentation for newly elected members
+    \item Manage IEEE-HKN Headquarters correspondence, chapter finances, and induction/member events
 \end{itemize}
 
 \vspace{1pt}
@@ -157,14 +145,14 @@
     \item Served as liaison between the Alumni Association and students, connecting alumni for mentorship and networking
 \end{itemize}
 
+\vspace{2pt}
 
-% ── Skills ───────────────────────────────────────────────────────────────────
 \section{Skills}
 
 \noindent
-\textbf{Programming \& Web:} Python, C, C++, Java, MATLAB, Bash, Verilog/SystemVerilog, JavaScript, HTML/CSS, UI/UX Design \\[0pt]
-\textbf{AI \& Robotics:} LLM Integration, RAG, VLA, Edge AI, Computer Vision (OpenCV, YOLO), TTS/STT, Multi-Agent Systems, ROS \\[0pt]
-\textbf{Hardware \& Tools:} Git/GitHub, Linux, Raspberry Pi, Arduino, FPGA, Circuit Design \& Analysis, Soldering, n8n, PCB Design \\[0pt]
+\textbf{Programming \& Web:} Python, C, C++, Java, MATLAB, Bash, Verilog/SystemVerilog, JavaScript, HTML/CSS, UI/UX Design \\[1pt]
+\textbf{AI \& Robotics:} LLM Integration, RAG, VLA, Edge AI, Computer Vision (OpenCV, YOLO), TTS/STT, Multi-Agent Systems, ROS \\[1pt]
+\textbf{Hardware \& Tools:} Git/GitHub, Linux, Raspberry Pi, Arduino, FPGA, Circuit Design \& Analysis, Soldering, n8n, PCB Design \\[1pt]
 \textbf{Languages:} English, Mandarin Chinese, Fuzhounese, Spanish
 
 \end{document}
