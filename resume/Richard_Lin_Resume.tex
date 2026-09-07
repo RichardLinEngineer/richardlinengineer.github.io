@@ -1,5 +1,5 @@
 % Richard Lin – Resume LaTeX Template
-% Compile with: pdflatex richard_lin_resume.tex
+% Compile with: lualatex richard_lin_resume.tex
 
 \documentclass[11pt, letterpaper]{article}
 
@@ -8,11 +8,16 @@
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{hyperref}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
 \usepackage[sfdefault]{carlito}
+\setsansfont[
+    Ligatures      = {NoCommon, NoRequired, NoContextual},
+    UprightFont    = *-Regular,
+    ItalicFont     = *-Italic,
+    BoldFont       = *-Bold,
+    BoldItalicFont = *-BoldItalic
+]{Carlito}
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage{microtype}
-\DisableLigatures[f]{encoding = *, family = *}
 
 \hypersetup{
     colorlinks=true,
@@ -54,10 +59,10 @@
 \noindent
 \hbox to \textwidth{\hfil{\fontsize{16}{19}\selectfont\textbf{Richard Lin}}\hfil\makebox[0pt][r]{U.S. Citizen}}\\[-1pt]
 {\centering
-    Huntingdon Valley, PA $|$ 215-403-4999 $|$
+    Huntingdon Valley, PA | 215-403-4999 |
     \href{mailto:richard.rich.lin@gmail.com}{richard.rich.lin@gmail.com} \\
-    \href{https://github.com/richardlin05}{github.com/richardlin05} $|$
-    \href{https://richardlin05.github.io}{richardlin05.github.io} $|$
+    \href{https://github.com/richardlin05}{github.com/richardlin05} |
+    \href{https://richardlin05.github.io}{richardlin05.github.io} |
     \href{https://linkedin.com/in/richardlin05}{linkedin.com/in/richardlin05}
     \par}
 
@@ -66,9 +71,9 @@
 \section{Education}
 
 \roleentry{Temple University}{Philadelphia, PA}%
-    {Bachelor of Science in Electrical and Computer Engineering}{Diploma Expected: May 2028}
+    {Bachelor of Science in Electrical and Computer Engineering}{Expected Graduation: May 2028}
 
-\noindent Minor: Computer Science $|$ Fundamentals of Physics Certificate $|$ GPA: 3.88/4.00 $|$ Dean's List: F24, S25, F25 \\
+\noindent Minor: Computer Science | Fundamentals of Physics Certificate | GPA: 3.88/4.00 | Dean's List: F24, S25, F25 \\
 \noindent \textbf{Relevant Courses:} Classical Control Systems; Signals and Systems; Processor Systems; Engineering Computation I-II-IV
 
 \vspace{2pt}
@@ -82,7 +87,7 @@
 \begin{itemize}
     \item Administered lab website and systems; ensured security, software maintenance and network reliability
     \item Built a multi-agent LLM system in Python: a service agent gathers a patron's situation, then a library agent (RAG + LLM-rerank) recommends top 3 best-fit devices from a 400+ item catalog (synced daily), helping people with disabilities
-    \item Trained a Vision-Language-Action (VLA) model with LeRobot to enable a robotic arm to pick up and hand objects for individuals with limited mobility; separately implemented ROS2-based robot control in C++ across multiple robots
+    \item Trained a Vision-Language-Action (VLA) model with LeRobot to enable a robotic arm to pick up and hand objects for individuals with limited mobility; developed ROS-based robot-control in C++ across multiple robots
 \end{itemize}
 
 \vspace{1pt}
@@ -109,7 +114,7 @@
 \begin{itemize}
     \item Designed analog audio-processing system that visualizes music as an audio-reactive LED light show
     \item Built op-amp mixer, potentiometer volume control, high/low-pass filters, peak detectors, BJT LED driver circuits
-    \item Calculated values with cutoff-frequency/current-limiting equations; verified against Multisim and hardware, within $\sim$1\%
+    \item Calculated values with cutoff-frequency/current-limiting equations; verified against Multisim and hardware, within 1\%
 \end{itemize}
 
 \vspace{1pt}
@@ -126,7 +131,7 @@
 \roleentry{Institute of Electrical and Electronics Engineers (IEEE) -- Temple University}{Philadelphia, PA}%
     {President}{Sep 2024 -- Present}
 \begin{itemize}
-    \item Led the $\sim$11-member IEEE executive board in planning outreach programs, technical workshops, and industry networking events, while coordinating with four affiliated chapters and societies (EMBS, PES, WIE, IEEE-HKN)
+    \item Led 11-member IEEE executive board in planning outreach programs, technical workshops, and industry networking events, while coordinating with four affiliated chapters and societies (EMBS, PES, WIE, IEEE-HKN)
     \item Grew IEEE SAC participation by 50\% (14 → 21) through targeted event promotion and outreach during 2025–2026
     \item Founded the first annual multi-university hardware hackathon with Drexel and UPenn IEEE branches
 \end{itemize}
@@ -151,7 +156,7 @@
 
 \noindent
 \textbf{Programming \& Web:} Python, C, C++, Java, MATLAB, Bash, Verilog/SystemVerilog, JavaScript, HTML/CSS, UI/UX Design \\[1pt]
-\textbf{AI \& Robotics:} LLM Integration, RAG, VLA, Edge AI, Computer Vision (OpenCV, YOLO), TTS/STT, Multi-Agent Systems, ROS \\[1pt]
+\textbf{AI \& Robotics:} Machine Learning, PyTorch, LLM Integration, RAG, VLA, Edge AI, Computer Vision (OpenCV, YOLO), ROS \\[1pt]
 \textbf{Hardware \& Tools:} Git/GitHub, Linux, Raspberry Pi, Arduino, FPGA, Circuit Design \& Analysis, Soldering, n8n, PCB Design \\[1pt]
 \textbf{Languages:} English, Mandarin Chinese, Fuzhounese, Spanish
 
